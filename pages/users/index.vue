@@ -1,7 +1,21 @@
 <template>
-  <h2>This is users page fuck off</h2>
+  <div class="container">
+    <input v-model="userId" type="text" />
+    <button @click="onLoadUser">load user</button>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      userId: ''
+    }
+  },
+  methods: {
+    onLoadUser() {
+      this.$router.push('/users/' + this.userId)
+    }
+  }
+}
 </script>
