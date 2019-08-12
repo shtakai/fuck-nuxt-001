@@ -11,7 +11,7 @@
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .header {
   width: 100%;
   height: 60px;
@@ -29,5 +29,15 @@
   justify-content: space-around;
   align-items: center;
   width: 80%;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover,
+    &:active {
+      color: white;
+    }
+  }
 }
 </style>
